@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>🤖 مساعد الجامعة الذكي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/assistant.css">
+</head>
+<body>
+
+  <div class="chat-container">
+    <div class="chat-header">
+      <span id="chatTitle">🤖 مساعد الجامعة الذكي</span>
+      <div class="header-buttons">
+        <button class="toggle-btn" onclick="toggleLang()" id="langBtn">🌐 EN</button>
+        <button class="toggle-btn" onclick="toggleDarkMode()">🌓</button>
+      </div>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+      <div class="bot-message chat-message" id="welcomeMsg">
+        مرحبًا بك! اسألني عن المواقع، الجداول، الامتحانات، الأعذار ...
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="اكتب سؤالك هنا..." />
+      <button onclick="sendMessage()" id="sendBtn">إرسال</button>
+    </div>
+
+    <div class="back-btn">
+      <a href="index.html" id="backBtn">🔙 الرجوع للرئيسية</a>
+    </div>
+  </div>
+
+  <script src="js/assistant.js"></script>
+</body>
+</html>

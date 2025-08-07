@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📅 جدول المحاضرات</title>
+  <link rel="stylesheet" href="css/schedule.css" />
+</head>
+<body>
+
+  <!-- إطار الجدول وكل شيء جواه -->
+  <div class="schedule-container">
+
+    <!-- أزرار اللغة والوضع الليلي -->
+    <div class="actions">
+      <button id="toggleDark">🌓 الوضع الليلي</button>
+      <button id="langBtn">🌐 English</button>
+    </div>
+
+    <h2 id="title">📅 جدول المحاضرات الأسبوعي</h2>
+
+    <table id="scheduleTable">
+      <thead>
+        <tr>
+          <th>اليوم</th>
+          <th>9:00 - 10:30</th>
+          <th>11:00 - 12:30</th>
+          <th>1:00 - 2:30</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- هيتم تعبئته بالـ JS -->
+      </tbody>
+    </table>
+
+    <div class="back-btn">
+      <a href="index.html" id="backBtn">🔙 الرجوع للرئيسية</a>
+    </div>
+
+  </div>
+
+  <script src="js/schedule.js"></script>
+</body>
+</html>

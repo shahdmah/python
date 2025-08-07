@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>خريطة التنقل داخل الحرم الجامعي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+
+  <h2 id="title">🧭 خريطة التنقل في الحرم الجامعي</h2>
+  <p id="subtitle" style="text-align:center;">تعرف على مواقع المباني داخل الجامعة الأهلية</p>
+
+  <iframe src="https://www.google.com/maps/d/embed?mid=11XXOBZO-q_oN91aSIbpR4D2DvmUwhzA&ehbc=2E312F" allowfullscreen></iframe>
+
+  <div class="description">
+    <h4 id="descTitle">📌 تعرف على مواقع مباني الجامعة الأهلية</h4>
+    <ul id="descList">
+      <!-- المحتوى بيتغير من js -->
+    </ul>
+  </div>
+
+  <div class="buttons">
+    <a id="mapLink" href="https://www.google.com/maps/place/جامعة+المنوفية+الأهلية" target="_blank">
+      🌍 الذهاب إلى الموقع على Google Maps
+    </a>
+    <a id="homeBtn" href="index.html">🔙 الرجوع إلى الصفحة الرئيسية</a>
+    <button onclick="toggleDarkMode()">🌓 الوضع الليلي</button>
+    <button onclick="toggleLang()" id="langBtn">🌐 EN</button>
+  </div>
+
+  <script src="js/map.js"></script>
+
+</body>
+</html>

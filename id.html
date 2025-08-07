@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>الهوية الرقمية للطالب</title>
+  <link rel="stylesheet" href="css/id.css">
+</head>
+<body>
+
+  <div class="card" id="idCard">
+    <!-- ✅ الأزرار -->
+    <button id="toggleDark">🌙 الوضع الليلي</button>
+    <button id="toggleLang">🌐 English</button>
+
+    <div class="header">
+      <img src="imgs/logo.png" alt="Logo of MNU">
+      <span>جامعة MNU - بطاقة الهوية الجامعية</span>
+    </div>
+
+    <div class="content">
+      <div class="left">
+        <img src= "/imgs/myPhoto.png"alt="صورة الطالب" />
+        <h2 id="studentName">اسم الطالب</h2>
+      </div>
+      <div class="right">
+        <div class="info-qr-row">
+          <div class="info">
+            <p><strong>الرقم الجامعي:</strong> <span id="studentID"></span></p>
+            <p><strong>الجامعة:</strong> <span id="studentUniversity"></span></p>
+            <p><strong>الكلية:</strong> <span id="studentFaculty"></span></p>
+            <p><strong>القسم:</strong> <span id="studentDepartment"></span></p>
+            <p><strong>الفرقة:</strong> <span id="studentLevel"></span></p>
+            <p><strong>الإيميل الجامعي:</strong> <span id="studentEmail"></span></p>
+          </div>
+          <div id="qrcode"></div>
+        </div>
+
+        <div class="bottom-buttons">
+          <button onclick="window.print()">🖨️ طباعة الهوية</button>
+          <button onclick="downloadPDF()">📄 تحميل PDF</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="signature">
+      <span><strong>مدير برامج حاسبات :</strong> د. تامر فتحي</span>
+      <a href="index.html">🔙 الرجوع للرئيسية</a>
+    </div>
+  </div>
+
+  <!-- مكتبات خارجية -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+  <!-- ملفات JS -->
+  <script src="js/id.js"></script>
+  <script src="student.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f2f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+.schedule-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #0071c5;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  background-color: #0071c5;
+  color: white;
+}
+
+.back-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.back-btn a {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* الوضع الليلي */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.dark-mode .schedule-container {
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+}
+
+.dark-mode table {
+  border-color: #555;
+}
+
+.dark-mode th {
+  background-color: #004a7c;
+}
+
+.dark-mode td {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .back-btn a {
+  background-color: #444;
+}
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.actions button {
+  padding: 10px 20px;
+  background-color: #0071c5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #005b9f;
+}
+
+.dark-mode .actions button {
+  background-color: #004a7c;
+}
+
+.dark-mode .actions button:hover {
+  background-color: #00385d;
+}
+.back-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.back-btn a {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn a:hover {
+  background-color: #5a6268;
+}
+
+.dark-mode .back-btn a {
+  background-color: #444;
+}
+
+.dark-mode .back-btn a:hover {
+  background-color: #555;
+}
+
+

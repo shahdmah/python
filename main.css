@@ -1,0 +1,93 @@
+body {
+  background-color: #e9f0f7;
+  font-family: 'Cairo', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  padding-top: 50px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #0071c5;
+  border: none;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: #0071c5;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+#toggleDark,
+#langBtn {
+  position: absolute;
+  top: 20px;
+  padding: 8px 16px;
+  background-color: white;
+  color: #0071c5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#toggleDark {
+  right: 20px;
+}
+
+#langBtn {
+  left: 20px;
+}
+
+/* الوضع الليلي */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark-mode .card {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+.dark-mode .btn-primary {
+  background-color: #ffffff;
+  color: #0071c5;
+}
+
+.dark-mode footer {
+  background-color: #333;
+  color: #ccc;
+}
+
+.dark-mode #toggleDark,
+.dark-mode #langBtn {
+  background-color: #ffffff;
+  color: #0071c5;
+}

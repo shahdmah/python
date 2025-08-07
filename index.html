@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart MNU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#004080">
+</head>
+<body>
+
+  <!-- أزرار التحكم -->
+  <div class="text-center p-3">
+    <button id="toggleDark" class="btn btn-secondary me-2">🌓 الوضع الليلي</button>
+    <button id="langBtn" class="btn btn-secondary">🌐 English</button>
+  </div>
+  <button id="installBtn" style="display: none; position: fixed; bottom: 20px; right: 20px;">
+  📲 Install App
+</button>
+
+
+  <div class="container text-center">
+    <h1 class="mb-4" id="title">🎓 Smart MNU</h1>
+    <div class="row g-4">
+
+      <!-- بطاقة الطالب -->
+      <div class="col-md-3">
+        <div class="card p-3 h-100">
+          <h3 class="card-title" id="card1_title">🪪 بطاقة الطالب الذكية</h3>
+          <p class="card-text" id="card1_text">اعرض بياناتك الجامعية، QR، واطبع الهوية أو حمّلها PDF.</p>
+          <a href="id.html" class="btn btn-primary mt-2" id="card1_btn">الدخول</a>
+        </div>
+      </div>
+
+      <!-- خريطة الجامعة -->
+      <div class="col-md-3">
+        <div class="card p-3 h-100">
+          <h3 class="card-title" id="card2_title">🗺️ خريطة الحرم الجامعي</h3>
+          <p class="card-text" id="card2_text">استكشف مواقع المباني، الكافيتريا، المصلى، ووصف الاتجاهات.</p>
+          <a href="map.html" class="btn btn-primary mt-2" id="card2_btn">عرض الخريطة</a>
+        </div>
+      </div>
+
+      <!-- مساعد الجامعة -->
+      <div class="col-md-3">
+        <div class="card p-3 h-100">
+          <h3 class="card-title" id="card3_title">🤖 مساعد الجامعة الذكي</h3>
+          <p class="card-text" id="card3_text">اسأله عن الجداول، المدرجات، الغياب، الأعذار، والمزيد.</p>
+          <a href="assistant.html" class="btn btn-primary mt-2" id="card3_btn">ابدأ المحادثة</a>
+        </div>
+      </div>
+
+      <!-- الجدول الدراسي -->
+      <div class="col-md-3">
+        <div class="card p-3 h-100">
+          <h3 class="card-title" id="card4_title">📅 الجدول الدراسي</h3>
+          <p class="card-text" id="card4_text">تعرف على جدول المحاضرات من السبت للخميس بالتفصيل.</p>
+          <a href="schedule.html" class="btn btn-primary mt-2" id="card4_btn">📅 عرض الجدول</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-center mt-4 p-3" id="footer">
+    مشروع الجامعة الذكية | تنفيذ: شهد سلامة © 2025
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+        .then(reg => console.log("✅ Service Worker Registered", reg))
+        .catch(err => console.error("❌ SW Error", err));
+    }
+  </script>
+</body>
+
+</body>
+</html>

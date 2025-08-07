@@ -1,0 +1,193 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #e9f0f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  width: 800px;
+  background: #0071c5;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  background-color: #005b9f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  animation: slideIn 3s ease-in-out infinite alternate;
+}
+
+.header img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+@keyframes slideIn {
+  from { background-color: #005b9f; }
+  to { background-color: #006bbf; }
+}
+
+.content {
+  display: flex;
+  direction: rtl;
+}
+
+.left {
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+.left img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 10px auto 5px;
+  display: block;
+}
+
+.left h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.right {
+  width: 60%;
+  background-color: #0071c5;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-qr-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.info {
+  flex: 1;
+}
+
+.info p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+#qrcode {
+  width: 130px;
+  height: 130px;
+  margin-right: 20px;
+}
+
+.bottom-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-buttons button {
+  padding: 8px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.bottom-buttons button:first-child {
+  background-color: #28a745;
+}
+
+.bottom-buttons button:last-child {
+  background-color: #ffc107;
+  color: black;
+}
+
+.bottom-buttons button:hover {
+  opacity: 0.9;
+}
+
+.signature {
+  text-align: left;
+  padding: 10px 20px;
+  font-style: italic;
+  font-size: 13px;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signature a {
+  padding: 6px 14px;
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* الوضع الليلي */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .card,
+.dark-mode .header,
+.dark-mode .right,
+.dark-mode .left {
+  background-color: #1e1e1e !important;
+  color: #e4e4e4 !important;
+}
+
+.dark-mode .signature a {
+  background-color: #444 !important;
+}
+
+.dark-mode button {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+/* الأزرار */
+#toggleDark, #toggleLang {
+  position: absolute;
+  top: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#toggleLang {
+  right: 10px;
+}
+
+#toggleDark {
+  left: 10px;
+}

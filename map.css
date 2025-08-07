@@ -1,0 +1,98 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #f4f6f9;
+  padding: 20px;
+  margin: 0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+  color: #0071c5;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+  border: 2px solid #0071c5;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.description {
+  background: #e9f0f7;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.description h4 {
+  margin-bottom: 15px;
+  color: #0071c5;
+}
+
+.description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.description ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.buttons a,
+.buttons button {
+  padding: 10px 20px;
+  background-color: #0071c5;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.buttons a:hover,
+.buttons button:hover {
+  background-color: #005fa3;
+}
+
+/* الوضع الليلي */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #eee;
+}
+
+.dark-mode .description {
+  background-color: #2b2b2b;
+  border-color: #444;
+}
+
+.dark-mode h2,
+.dark-mode .description h4 {
+  color: #90caf9;
+}
+
+.dark-mode .buttons a,
+.dark-mode .buttons button {
+  background-color: #ffffff;
+  color: #0071c5;
+}
+
+.dark-mode .buttons a:hover,
+.dark-mode .buttons button:hover {
+  background-color: #e2e2e2;
+}
