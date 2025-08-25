@@ -1,82 +1,127 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Smart MNU</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#004080">
+  <title>MentorHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- أزرار التحكم -->
-  <div class="text-center p-3">
-    <button id="toggleDark" class="btn btn-secondary me-2">🌓 الوضع الليلي</button>
-    <button id="langBtn" class="btn btn-secondary">🌐 English</button>
-  </div>
-  <button id="installBtn" style="display: none; position: fixed; bottom: 20px; right: 20px;">
-  📲 Install App
-</button>
-
-
-  <div class="container text-center">
-    <h1 class="mb-4" id="title">🎓 Smart MNU</h1>
-    <div class="row g-4">
-
-      <!-- بطاقة الطالب -->
-      <div class="col-md-3">
-        <div class="card p-3 h-100">
-          <h3 class="card-title" id="card1_title">🪪 بطاقة الطالب الذكية</h3>
-          <p class="card-text" id="card1_text">اعرض بياناتك الجامعية، QR، واطبع الهوية أو حمّلها PDF.</p>
-          <a href="id.html" class="btn btn-primary mt-2" id="card1_btn">الدخول</a>
-        </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-4 ms-3" href="#">Booking site to book an online session for technical guidance</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item px-2"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#services">Our Services</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#booking">Book a Session</a></li>
+          <li class="nav-item px-2"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <!-- خريطة الجامعة -->
-      <div class="col-md-3">
-        <div class="card p-3 h-100">
-          <h3 class="card-title" id="card2_title">🗺️ خريطة الحرم الجامعي</h3>
-          <p class="card-text" id="card2_text">استكشف مواقع المباني، الكافيتريا، المصلى، ووصف الاتجاهات.</p>
-          <a href="map.html" class="btn btn-primary mt-2" id="card2_btn">عرض الخريطة</a>
-        </div>
-      </div>
-
-      <!-- مساعد الجامعة -->
-      <div class="col-md-3">
-        <div class="card p-3 h-100">
-          <h3 class="card-title" id="card3_title">🤖 مساعد الجامعة الذكي</h3>
-          <p class="card-text" id="card3_text">اسأله عن الجداول، المدرجات، الغياب، الأعذار، والمزيد.</p>
-          <a href="assistant.html" class="btn btn-primary mt-2" id="card3_btn">ابدأ المحادثة</a>
-        </div>
-      </div>
-
-      <!-- الجدول الدراسي -->
-      <div class="col-md-3">
-        <div class="card p-3 h-100">
-          <h3 class="card-title" id="card4_title">📅 الجدول الدراسي</h3>
-          <p class="card-text" id="card4_text">تعرف على جدول المحاضرات من السبت للخميس بالتفصيل.</p>
-          <a href="schedule.html" class="btn btn-primary mt-2" id="card4_btn">📅 عرض الجدول</a>
-        </div>
-      </div>
-
+  <!-- HERO -->
+  <div id="home" class="position-relative hero-carousel carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=70" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=70" class="d-block w-100"></div>
+      <div class="carousel-item"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=70" class="d-block w-100"></div>
+    </div>
+    <div class="hero-overlay">
+      <h1 id="heroTitle" class="animated-title">MentorHub</h1>
     </div>
   </div>
 
-  <footer class="text-center mt-4 p-3" id="footer">
-    مشروع الجامعة الذكية | تنفيذ: شهد سلامة © 2025
+  <!-- SERVICES -->
+  <section id="services">
+  <div class="container">
+    <div class="booking-card p-4"> <!-- نفس style البوكنج كارد عشان الإطار الأبيض -->
+      <h2 class="section-title text-center mb-4">Our Services</h2>
+      <div class="row g-4" id="services-row">
+        <!-- الكروت هتظهر هنا بالـ JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- BOOKING -->
+  <section id="booking">
+    <div class="container">
+      <div class="booking-card p-4">
+        <h2 class="section-title text-center mb-3">Book a Session</h2>
+        <p class="text-center mb-4">Choose your service and schedule your session easily online.</p>
+        <div class="row g-3 mb-4 text-center">
+          <div class="col-md-4">
+            <div class="p-2 border rounded shadow-sm">
+              <h6>Easy Scheduling</h6>
+              <p class="mb-0">Pick date and time that works for you.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-2 border rounded shadow-sm">
+              <h6>Expert Mentors</h6>
+              <p class="mb-0">Choose from certified professionals in each field.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-2 border rounded shadow-sm">
+              <h6>Secure & Reliable</h6>
+              <p class="mb-0">Your data and sessions are safe and confidential.</p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6"><input type="text" class="form-control" placeholder="Full Name" required></div>
+            <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
+            <div class="col-md-6"><input type="tel" class="form-control" placeholder="Phone Number" required></div>
+            <div class="col-md-6"><input type="datetime-local" class="form-control" placeholder="Select Date & Time" required></div>
+            <div class="col-md-6">
+              <select class="form-select" required>
+                <option value="">Select Service</option>
+              </select>
+            </div>
+            <div class="col-12"><textarea class="form-control" rows="3" placeholder="Additional Notes"></textarea></div>
+            <div class="col-12 text-center"><button class="btn-gradient">Confirm Booking</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card p-4">
+        <h2 class="section-title text-center mb-3">Contact Us</h2>
+        <p class="text-center mb-4">Feel free to reach out with your questions or inquiries.</p>
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name" required></div>
+            <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email" required></div>
+            <div class="col-12"><textarea class="form-control" rows="4" placeholder="Message"></textarea></div>
+            <div class="col-12 text-center"><button class="btn-gradient">Send Message</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 text-center">
+    <p class="mb-0">&copy; 2025 Shahd Salama. All Rights Reserved.</p>
   </footer>
 
-  <script src="js/main.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("service-worker.js")
-        .then(reg => console.log("✅ Service Worker Registered", reg))
-        .catch(err => console.error("❌ SW Error", err));
-    }
-  </script>
-</body>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

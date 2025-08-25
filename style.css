@@ -1,0 +1,124 @@
+body {
+  font-family:'Segoe UI',sans-serif; 
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+.navbar{background:#0f172a !important;}
+.navbar .nav-link{color:#fff !important; font-weight:600;}
+.navbar .nav-link:hover{color:#38bdf8 !important;}
+
+/* HERO */
+.hero-carousel .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(.6);
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.animated-title {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 20px 40px;
+  border-radius: 20px;
+  transition: all 1s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* SECTION TITLES GRADIENT */
+.section-title {
+  text-align:center; 
+  font-weight:700; 
+  margin-bottom:40px;
+  background: linear-gradient(90deg,#2563eb,#9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* SECTIONS */
+#services, #booking, #contact {background:#dbeafe; padding:80px 0;}
+#services {
+  background: #dbeafe; 
+  padding: 80px 0;
+}
+
+.service-card{
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.service-card.show{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/* SERVICE CARDS */
+.service-card{
+  border:none; 
+  border-radius:18px; 
+  overflow:hidden;
+  box-shadow:0 6px 20px rgba(0,0,0,0.1);
+  transform:translateY(40px); 
+  opacity:0; 
+  transition:1s ease;
+}
+.service-card.show{
+  transform:translateY(0); 
+  opacity:1;
+}
+.service-card img{
+  height:200px; 
+  object-fit:cover;
+}
+
+/* BOOKING & CONTACT */
+.booking-card,.contact-card{
+  background:#fff; border-radius:20px; padding:30px;
+  box-shadow:0 14px 32px rgba(2,6,23,.15);
+}
+
+/* BUTTONS */
+.btn-gradient{
+  background:linear-gradient(90deg,#2563eb,#9333ea,#db2777);
+  background-size:300% 300%; color:#fff; border:none; padding:12px 28px;
+  font-weight:600; border-radius:30px;
+  transition:all .3s ease;
+}
+.btn-gradient:hover{
+  background:orange !important;
+  transform:translateY(-2px); 
+  box-shadow:0 6px 20px rgba(0,0,0,0.2);
+  animation:none;
+}
+
+footer {
+  background: #dbeafe; /* نفس لون خلفية السكشنات */
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer p {
+  color: #0f172a; /* لون النص الأساسي للصفحة (أزرق غامق/أسود تقريبا) */
+  margin: 0;
+}
